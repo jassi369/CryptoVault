@@ -34,7 +34,7 @@ function encryptFile() {
 }
 function decryptFile() {
   // Get the file input element and check if a file is selected
-  var file = document.getElementById('file-input').files[0];
+  var file = document.getElementById('file-input-decrypt').files[0];
   if (!file) {
     alert('Please select a file to decrypt.');
     return;
