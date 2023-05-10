@@ -2,14 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>File Encryption Demo</title>
+    <title>CryptoVault</title>
   </head>
   <body>
-    <h1>File Encryption Demo</h1>
+    <h1>CryptoVault</h1>
     <input type="file" id="file-input">
     <br>
     <button onclick="encryptFile()">Encrypt File</button>
     <a href="#" id="download-link" style="display:none">Download Encrypted File</a>
+    <h1>Decrypt File</h1>
+    <input type="file" id="file-input">
+    <br>
+    <button onClick="decryptFile()">Decrypt File</button>
+    <a href="#" id="download-link" style="display:none">Download Decrypted File</a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="app.js"></script>
   </body>
