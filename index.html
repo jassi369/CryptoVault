@@ -3,18 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>CryptoVault</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
   <body>
-    <h1>CryptoVault</h1>
-    <input type="file" id="file-input">
+    <h1 class="center">CryptoVault</h1>
+    <label for="file-input" class="form-label"><h3>Encrypt</h3></label>
+    <input type="file" id="file-input" class="form-control">
     <br>
-    <button onclick="encryptFile()">Encrypt File</button>
+    <button onclick="encryptFile()" class="btn btn-primary">Encrypt File</button>
     <a href="#" id="download-link" style="display:none">Download Encrypted File</a>
-    <h1>Decrypt File</h1>
-    <input type="file" id="file-input-decrypt">
+<br>
+    <label for="file-input-decrypt" class="form-label"><h3>Decrypt</h3></label>
+    <input type="file" id="file-input-decrypt" class="form-control">
     <br>
-    <button onClick="decryptFile()">Decrypt File</button>
+    <button onClick="decryptFile()" class="btn btn-primary">Decrypt File</button>
     <a href="#" id="download-link-decrypt" style="display:none">Download Decrypted File</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="app.js"></script>
   </body>
